@@ -26,10 +26,4 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.java.main" />
     </bean>
-    
-   <!-- 	<context:component-scan base-package="com.java.main"></context:component-scan> -->
-   
-   	<bean id="objectMapper" class="org.codehaus.jackson.map.ObjectMapper">
-   	
-   	</bean>
 </beans>

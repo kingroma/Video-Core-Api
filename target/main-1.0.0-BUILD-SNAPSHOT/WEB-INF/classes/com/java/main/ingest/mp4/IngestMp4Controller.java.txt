@@ -1,0 +1,28 @@
+package com.java.main.ingest.mp4;
+
+import java.util.Locale;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class IngestMp4Controller {
+	private static final Logger logger = LoggerFactory.getLogger(IngestMp4Controller.class);
+	
+	// @Autowired
+	// public IngestMp4Service ingestMp4Service;
+	
+	@RequestMapping(value = "/ingest/mp4/list", method = RequestMethod.GET)
+	public String ingestMp4List(Locale locale, Model model) {
+		logger.info("Ingest mp4 list {}", model);
+		
+		//ingestMp4Service.list();
+		
+		return "home";
+	}
+}

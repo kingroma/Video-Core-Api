@@ -1,0 +1,18 @@
+package com.java.main.ingest.mp4;
+
+// import mp4.metadata.Mp4MetaModel;
+
+/**
+ * create table TB_INGEST_MP4 (
+	INGEST_ID NVARCHAR(30) PRIMARY KEY ,
+    PATH NVARCHAR(1000) 
+);
+*/
+public class IngestMp4VO {
+	private String ingestId = "";
+	
+	private String path = "";
+	
+	
+	
+}

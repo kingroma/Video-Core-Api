@@ -1,0 +1,16 @@
+package com.java.main.ingest.mp4;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class IngestMp4ServiceImpl implements IngestMp4Service{
+
+	@Autowired
+	public IngestMp4Mapper ingestMp4Mapper;
+	
+	public List<Map<String,String>> list(){
+		return ingestMp4Mapper.list();
+	}
+}
