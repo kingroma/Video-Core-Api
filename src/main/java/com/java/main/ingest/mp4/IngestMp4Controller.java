@@ -24,7 +24,7 @@ public class IngestMp4Controller {
 	
 	@Resource(name="ingestMp4Service")
 	public IngestMp4Service ingestMp4Service;
-	 
+	 // KJJ
 	@RequestMapping(value = "/ingest/mp4/list", method = RequestMethod.GET)
 	@ResponseBody
 	public List<IngestMp4VO> ingestMp4List(Locale locale, Model model) {
